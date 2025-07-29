@@ -8,7 +8,7 @@ export default function ShopId() {
 
   return (
     <section className='p-4 flex justify-around items-center '>
-      <div className='w-4/5 md:w-3/5 bg-blue-200 rounded-lg p-4 flex flex-col gap-4'>
+      <div className='w-4/5 md:w-3/5 bg-yellow-200 rounded-lg p-4 flex flex-col gap-4'>
         <h1 className='font-semibold'>{Products?.title}</h1>
         <img src={Products?.images[0]} alt={Products?.title} width={'100px'} />
         <h1>${Products?.price}</h1>
