@@ -1,554 +1,659 @@
-import React from 'react';
+export const productsData = 
+[
 
-export const productsData = [
-  {
-    "id": 1,
-    "title": "Google MacBook Pro",
-    "description": "MacBook Pro by Google in Laptops category. Premium quality product.",
-    "price": 154.65,
-    "category": "Laptops",
-    "brand": "Google",
-    "image": "https://via.placeholder.com/200x200.png?text=MacBook+Pro",
-    "rating": 4.5,
-    "stock": 50
-  },
-  {
-    "id": 2,
-    "title": "Nike EOS R6 Camera",
-    "description": "EOS R6 Camera by Nike in Footwear category. Premium quality product.",
-    "price": 1657.74,
-    "category": "Footwear",
-    "brand": "Nike",
-    "image": "https://via.placeholder.com/200x200.png?text=EOS+R6+Camera",
-    "rating": 4.1,
-    "stock": 49
-  },
-  {
-    "id": 3,
-    "title": "Asus Echo Dot",
-    "description": "Echo Dot by Asus in Audio category. Premium quality product.",
-    "price": 1288.66,
-    "category": "Audio",
-    "brand": "Asus",
-    "image": "https://via.placeholder.com/200x200.png?text=Echo+Dot",
-    "rating": 4.7,
-    "stock": 23
-  },
-  {
-    "id": 4,
-    "title": "LG Xbox Series X",
-    "description": "Xbox Series X by LG in Laptops category. Premium quality product.",
-    "price": 94.32,
-    "category": "Laptops",
-    "brand": "LG",
-    "image": "https://via.placeholder.com/200x200.png?text=Xbox+Series+X",
-    "rating": 4.2,
-    "stock": 21
-  },
-  {
-    "id": 5,
-    "title": "LG Galaxy S23 Ultra",
-    "description": "Galaxy S23 Ultra by LG in Wearables category. Premium quality product.",
-    "price": 203.82,
-    "category": "Wearables",
-    "brand": "LG",
-    "image": "https://via.placeholder.com/200x200.png?text=Galaxy+S23+Ultra",
-    "rating": 4.5,
-    "stock": 36
-  },
-  {
-    "id": 6,
-    "title": "Lenovo EOS R6 Camera",
-    "description": "EOS R6 Camera by Lenovo in Laptops category. Premium quality product.",
-    "price": 1378.57,
-    "category": "Laptops",
-    "brand": "Lenovo",
-    "image": "https://via.placeholder.com/200x200.png?text=EOS+R6+Camera",
-    "rating": 4.2,
-    "stock": 7
-  },
-  {
-    "id": 7,
-    "title": "Canon Ultraboost 22",
-    "description": "Ultraboost 22 by Canon in Cameras category. Premium quality product.",
-    "price": 2024.99,
-    "category": "Cameras",
-    "brand": "Canon",
-    "image": "https://via.placeholder.com/200x200.png?text=Ultraboost+22",
-    "rating": 4.2,
-    "stock": 39
-  },
-  {
-    "id": 8,
-    "title": "Lenovo Galaxy Watch 6",
-    "description": "Galaxy Watch 6 by Lenovo in TV & Home Theater category. Premium quality product.",
-    "price": 734.08,
-    "category": "TV & Home Theater",
-    "brand": "Lenovo",
-    "image": "https://via.placeholder.com/200x200.png?text=Galaxy+Watch+6",
-    "rating": 3.8,
-    "stock": 28
-  },
-  {
-    "id": 9,
-    "title": "Lenovo ROG Strix Gaming Laptop",
-    "description": "ROG Strix Gaming Laptop by Lenovo in Wearables category. Premium quality product.",
-    "price": 272.03,
-    "category": "Wearables",
-    "brand": "Lenovo",
-    "image": "https://via.placeholder.com/200x200.png?text=ROG+Strix+Gaming+Laptop",
-    "rating": 4.2,
-    "stock": 22
-  },
-  {
-    "id": 10,
-    "title": "Adidas Pixel 7",
-    "description": "Pixel 7 by Adidas in Audio category. Premium quality product.",
-    "price": 750.39,
-    "category": "Audio",
-    "brand": "Adidas",
-    "image": "https://via.placeholder.com/200x200.png?text=Pixel+7",
-    "rating": 3.6,
-    "stock": 12
-  },
-  {
-    "id": 11,
-    "title": "Amazon Galaxy S23 Ultra",
-    "description": "Galaxy S23 Ultra by Amazon in Gaming category. Premium quality product.",
-    "price": 2129.89,
-    "category": "Gaming",
-    "brand": "Amazon",
-    "image": "https://via.placeholder.com/200x200.png?text=Galaxy+S23+Ultra",
-    "rating": 3.9,
-    "stock": 5
-  },
-  {
-    "id": 12,
-    "title": "Samsung EOS R6 Camera",
-    "description": "EOS R6 Camera by Samsung in Wearables category. Premium quality product.",
-    "price": 1190.73,
-    "category": "Wearables",
-    "brand": "Samsung",
-    "image": "https://via.placeholder.com/200x200.png?text=EOS+R6+Camera",
-    "rating": 4.0,
-    "stock": 11
-  },
-  {
-    "id": 13,
-    "title": "Google Ultraboost 22",
-    "description": "Ultraboost 22 by Google in Wearables category. Premium quality product.",
-    "price": 2227.82,
-    "category": "Wearables",
-    "brand": "Google",
-    "image": "https://via.placeholder.com/200x200.png?text=Ultraboost+22",
-    "rating": 4.3,
-    "stock": 4
-  },
-  {
-    "id": 14,
-    "title": "Lenovo Pixel 7",
-    "description": "Pixel 7 by Lenovo in Gaming category. Premium quality product.",
-    "price": 1813.54,
-    "category": "Gaming",
-    "brand": "Lenovo",
-    "image": "https://via.placeholder.com/200x200.png?text=Pixel+7",
-    "rating": 3.7,
-    "stock": 44
-  },
-  {
-    "id": 15,
-    "title": "Dell XPS 13 Laptop",
-    "description": "XPS 13 Laptop by Dell in Footwear category. Premium quality product.",
-    "price": 1015.2,
-    "category": "Footwear",
-    "brand": "Dell",
-    "image": "https://via.placeholder.com/200x200.png?text=XPS+13+Laptop",
-    "rating": 3.6,
-    "stock": 39
-  },
-  {
-    "id": 16,
-    "title": "Bose ThinkPad X1",
-    "description": "ThinkPad X1 by Bose in TV & Home Theater category. Premium quality product.",
-    "price": 1768.17,
-    "category": "TV & Home Theater",
-    "brand": "Bose",
-    "image": "https://via.placeholder.com/200x200.png?text=ThinkPad+X1",
-    "rating": 3.7,
-    "stock": 5
-  },
-  {
-    "id": 17,
-    "title": "Microsoft ROG Strix Gaming Laptop",
-    "description": "ROG Strix Gaming Laptop by Microsoft in Laptops category. Premium quality product.",
-    "price": 681.58,
-    "category": "Laptops",
-    "brand": "Microsoft",
-    "image": "https://via.placeholder.com/200x200.png?text=ROG+Strix+Gaming+Laptop",
-    "rating": 3.5,
-    "stock": 35
-  },
-  {
-    "id": 18,
-    "title": "Dell Ultraboost 22",
-    "description": "Ultraboost 22 by Dell in Wearables category. Premium quality product.",
-    "price": 251.4,
-    "category": "Wearables",
-    "brand": "Dell",
-    "image": "https://via.placeholder.com/200x200.png?text=Ultraboost+22",
-    "rating": 4.6,
-    "stock": 40
-  },
-  {
-    "id": 19,
-    "title": "Microsoft Kindle Paperwhite",
-    "description": "Kindle Paperwhite by Microsoft in E-readers category. Premium quality product.",
-    "price": 787.65,
-    "category": "E-readers",
-    "brand": "Microsoft",
-    "image": "https://via.placeholder.com/200x200.png?text=Kindle+Paperwhite",
-    "rating": 4.1,
-    "stock": 12
-  },
-  {
-    "id": 20,
-    "title": "Bose WH-1000XM5 Headphones",
-    "description": "WH-1000XM5 Headphones by Bose in Smartphones category. Premium quality product.",
-    "price": 1561.3,
-    "category": "Smartphones",
-    "brand": "Bose",
-    "image": "https://via.placeholder.com/200x200.png?text=WH-1000XM5+Headphones",
-    "rating": 4.4,
-    "stock": 40
-  },
-  {
-    "id": 21,
-    "title": "Amazon Kindle Paperwhite",
-    "description": "Kindle Paperwhite by Amazon in Audio category. Premium quality product.",
-    "price": 1843.45,
-    "category": "Audio",
-    "brand": "Amazon",
-    "image": "https://via.placeholder.com/200x200.png?text=Kindle+Paperwhite",
-    "rating": 5.0,
-    "stock": 34
-  },
-  {
-    "id": 22,
-    "title": "Nike Galaxy S23 Ultra",
-    "description": "Galaxy S23 Ultra by Nike in Wearables category. Premium quality product.",
-    "price": 1404.96,
-    "category": "Wearables",
-    "brand": "Nike",
-    "image": "https://via.placeholder.com/200x200.png?text=Galaxy+S23+Ultra",
-    "rating": 4.1,
-    "stock": 19
-  },
-  {
-    "id": 23,
-    "title": "Amazon Air Max 270",
-    "description": "Air Max 270 by Amazon in Footwear category. Premium quality product.",
-    "price": 1932.99,
-    "category": "Footwear",
-    "brand": "Amazon",
-    "image": "https://via.placeholder.com/200x200.png?text=Air+Max+270",
-    "rating": 4.5,
-    "stock": 26
-  },
-  {
-    "id": 24,
-    "title": "LG Pixel 7",
-    "description": "Pixel 7 by LG in Wearables category. Premium quality product.",
-    "price": 1714.97,
-    "category": "Wearables",
-    "brand": "LG",
-    "image": "https://via.placeholder.com/200x200.png?text=Pixel+7",
-    "rating": 4.1,
-    "stock": 34
-  },
-  {
-    "id": 25,
-    "title": "Samsung Surface Pro 9",
-    "description": "Surface Pro 9 by Samsung in TV & Home Theater category. Premium quality product.",
-    "price": 671.2,
-    "category": "TV & Home Theater",
-    "brand": "Samsung",
-    "image": "https://via.placeholder.com/200x200.png?text=Surface+Pro+9",
-    "rating": 4.6,
-    "stock": 30
-  },
-  {
-    "id": 26,
-    "title": "LG Ultraboost 22",
-    "description": "Ultraboost 22 by LG in Tablets category. Premium quality product.",
-    "price": 1519.24,
-    "category": "Tablets",
-    "brand": "LG",
-    "image": "https://via.placeholder.com/200x200.png?text=Ultraboost+22",
-    "rating": 3.5,
-    "stock": 14
-  },
-  {
-    "id": 27,
-    "title": "Adidas ROG Strix Gaming Laptop",
-    "description": "ROG Strix Gaming Laptop by Adidas in Wearables category. Premium quality product.",
-    "price": 2164.84,
-    "category": "Wearables",
-    "brand": "Adidas",
-    "image": "https://via.placeholder.com/200x200.png?text=ROG+Strix+Gaming+Laptop",
-    "rating": 4.0,
-    "stock": 35
-  },
-  {
-    "id": 28,
-    "title": "Samsung Xbox Series X",
-    "description": "Xbox Series X by Samsung in Gaming category. Premium quality product.",
-    "price": 679.94,
-    "category": "Gaming",
-    "brand": "Samsung",
-    "image": "https://via.placeholder.com/200x200.png?text=Xbox+Series+X",
-    "rating": 4.3,
-    "stock": 14
-  },
-  {
-    "id": 29,
-    "title": "Dell ROG Strix Gaming Laptop",
-    "description": "ROG Strix Gaming Laptop by Dell in Tablets category. Premium quality product.",
-    "price": 822.81,
-    "category": "Tablets",
-    "brand": "Dell",
-    "image": "https://via.placeholder.com/200x200.png?text=ROG+Strix+Gaming+Laptop",
-    "rating": 4.2,
-    "stock": 19
-  },
-  {
-    "id": 30,
-    "title": "Samsung Kindle Paperwhite",
-    "description": "Kindle Paperwhite by Samsung in Tablets category. Premium quality product.",
-    "price": 461.36,
-    "category": "Tablets",
-    "brand": "Samsung",
-    "image": "https://via.placeholder.com/200x200.png?text=Kindle+Paperwhite",
-    "rating": 4.0,
-    "stock": 47
-  },
-  {
-    "id": 31,
-    "title": "Adidas Surface Pro 9",
-    "description": "Surface Pro 9 by Adidas in Smartphones category. Premium quality product.",
-    "price": 810.21,
-    "category": "Smartphones",
-    "brand": "Adidas",
-    "image": "https://via.placeholder.com/200x200.png?text=Surface+Pro+9",
-    "rating": 4.9,
-    "stock": 27
-  },
-  {
-    "id": 32,
-    "title": "Asus MacBook Pro",
-    "description": "MacBook Pro by Asus in Cameras category. Premium quality product.",
-    "price": 570.46,
-    "category": "Cameras",
-    "brand": "Asus",
-    "image": "https://via.placeholder.com/200x200.png?text=MacBook+Pro",
-    "rating": 3.6,
-    "stock": 11
-  },
-  {
-    "id": 33,
-    "title": "Samsung OLED CX TV",
-    "description": "OLED CX TV by Samsung in E-readers category. Premium quality product.",
-    "price": 328.54,
-    "category": "E-readers",
-    "brand": "Samsung",
-    "image": "https://via.placeholder.com/200x200.png?text=OLED+CX+TV",
-    "rating": 4.4,
-    "stock": 6
-  },
-  {
-    "id": 34,
-    "title": "Canon Echo Dot",
-    "description": "Echo Dot by Canon in TV & Home Theater category. Premium quality product.",
-    "price": 2340.75,
-    "category": "TV & Home Theater",
-    "brand": "Canon",
-    "image": "https://via.placeholder.com/200x200.png?text=Echo+Dot",
-    "rating": 4.0,
-    "stock": 1
-  },
-  {
-    "id": 35,
-    "title": "Nike OLED CX TV",
-    "description": "OLED CX TV by Nike in TV & Home Theater category. Premium quality product.",
-    "price": 981.61,
-    "category": "TV & Home Theater",
-    "brand": "Nike",
-    "image": "https://via.placeholder.com/200x200.png?text=OLED+CX+TV",
-    "rating": 3.7,
-    "stock": 45
-  },
-  {
-    "id": 36,
-    "title": "Google iPhone 14 Pro",
-    "description": "iPhone 14 Pro by Google in Cameras category. Premium quality product.",
-    "price": 2452.78,
-    "category": "Cameras",
-    "brand": "Google",
-    "image": "https://via.placeholder.com/200x200.png?text=iPhone+14+Pro",
-    "rating": 4.5,
-    "stock": 1
-  },
-  {
-    "id": 37,
-    "title": "Apple Ultraboost 22",
-    "description": "Ultraboost 22 by Apple in TV & Home Theater category. Premium quality product.",
-    "price": 505.17,
-    "category": "TV & Home Theater",
-    "brand": "Apple",
-    "image": "https://via.placeholder.com/200x200.png?text=Ultraboost+22",
-    "rating": 4.8,
-    "stock": 24
-  },
-  {
-    "id": 38,
-    "title": "Apple EOS R6 Camera",
-    "description": "EOS R6 Camera by Apple in Tablets category. Premium quality product.",
-    "price": 1816.12,
-    "category": "Tablets",
-    "brand": "Apple",
-    "image": "https://via.placeholder.com/200x200.png?text=EOS+R6+Camera",
-    "rating": 4.5,
-    "stock": 30
-  },
-  {
-    "id": 39,
-    "title": "Adidas WH-1000XM5 Headphones",
-    "description": "WH-1000XM5 Headphones by Adidas in Audio category. Premium quality product.",
-    "price": 1734.6,
-    "category": "Audio",
-    "brand": "Adidas",
-    "image": "https://via.placeholder.com/200x200.png?text=WH-1000XM5+Headphones",
-    "rating": 4.7,
-    "stock": 34
-  },
-  {
-    "id": 40,
-    "title": "Adidas Fitbit Charge 5",
-    "description": "Fitbit Charge 5 by Adidas in Smartphones category. Premium quality product.",
-    "price": 289.82,
-    "category": "Smartphones",
-    "brand": "Adidas",
-    "image": "https://via.placeholder.com/200x200.png?text=Fitbit+Charge+5",
-    "rating": 4.4,
-    "stock": 36
-  },
-  {
-    "id": 41,
-    "title": "LG iPhone 14 Pro",
-    "description": "iPhone 14 Pro by LG in Wearables category. Premium quality product.",
-    "price": 1306.83,
-    "category": "Wearables",
-    "brand": "LG",
-    "image": "https://via.placeholder.com/200x200.png?text=iPhone+14+Pro",
-    "rating": 3.9,
-    "stock": 0
-  },
-  {
-    "id": 42,
-    "title": "Google Galaxy Watch 6",
-    "description": "Galaxy Watch 6 by Google in E-readers category. Premium quality product.",
-    "price": 52.53,
-    "category": "E-readers",
-    "brand": "Google",
-    "image": "https://via.placeholder.com/200x200.png?text=Galaxy+Watch+6",
-    "rating": 3.6,
-    "stock": 19
-  },
-  {
-    "id": 43,
-    "title": "Canon XPS 13 Laptop",
-    "description": "XPS 13 Laptop by Canon in Laptops category. Premium quality product.",
-    "price": 1506.0,
-    "category": "Laptops",
-    "brand": "Canon",
-    "image": "https://via.placeholder.com/200x200.png?text=XPS+13+Laptop",
-    "rating": 4.6,
-    "stock": 21
-  },
-  {
-    "id": 44,
-    "title": "Bose Surface Pro 9",
-    "description": "Surface Pro 9 by Bose in Laptops category. Premium quality product.",
-    "price": 1741.25,
-    "category": "Laptops",
-    "brand": "Bose",
-    "image": "https://via.placeholder.com/200x200.png?text=Surface+Pro+9",
-    "rating": 4.4,
-    "stock": 23
-  },
-  {
-    "id": 45,
-    "title": "LG PlayStation 5",
-    "description": "PlayStation 5 by LG in E-readers category. Premium quality product.",
-    "price": 1179.65,
-    "category": "E-readers",
-    "brand": "LG",
-    "image": "https://via.placeholder.com/200x200.png?text=PlayStation+5",
-    "rating": 3.6,
-    "stock": 26
-  },
-  {
-    "id": 46,
-    "title": "Samsung OLED CX TV",
-    "description": "OLED CX TV by Samsung in Audio category. Premium quality product.",
-    "price": 314.34,
-    "category": "Audio",
-    "brand": "Samsung",
-    "image": "https://via.placeholder.com/200x200.png?text=OLED+CX+TV",
-    "rating": 3.8,
-    "stock": 28
-  },
-  {
-    "id": 47,
-    "title": "Google ROG Strix Gaming Laptop",
-    "description": "ROG Strix Gaming Laptop by Google in E-readers category. Premium quality product.",
-    "price": 1165.71,
-    "category": "E-readers",
-    "brand": "Google",
-    "image": "https://via.placeholder.com/200x200.png?text=ROG+Strix+Gaming+Laptop",
-    "rating": 5.0,
-    "stock": 20
-  },
-  {
-    "id": 48,
-    "title": "Adidas OLED CX TV",
-    "description": "OLED CX TV by Adidas in TV & Home Theater category. Premium quality product.",
-    "price": 92.69,
-    "category": "TV & Home Theater",
-    "brand": "Adidas",
-    "image": "https://via.placeholder.com/200x200.png?text=OLED+CX+TV",
-    "rating": 4.3,
-    "stock": 41
-  },
-  {
-    "id": 49,
-    "title": "Nike Galaxy S23 Ultra",
-    "description": "Galaxy S23 Ultra by Nike in Footwear category. Premium quality product.",
-    "price": 379.67,
-    "category": "Footwear",
-    "brand": "Nike",
-    "image": "https://via.placeholder.com/200x200.png?text=Galaxy+S23+Ultra",
-    "rating": 4.2,
-    "stock": 15
-  },
-  {
-    "id": 50,
-    "title": "Canon Galaxy Watch 6",
-    "description": "Galaxy Watch 6 by Canon in Tablets category. Premium quality product.",
-    "price": 575.45,
-    "category": "Tablets",
-    "brand": "Canon",
-    "image": "https://via.placeholder.com/200x200.png?text=Galaxy+Watch+6",
-    "rating": 3.7,
-    "stock": 40
-  }
-];
+      {
+            "id": 1,
+            "title": "Majestic Mountain Graphic T-Shirt",
+            "slug": "majestic-mountain-graphic-t-shirt",
+            "price": 44,
+            "description": "Elevate your wardrobe with this stylish black t-shirt featuring a striking monochrome mountain range graphic. Perfect for those who love the outdoors or want to add a touch of nature-inspired design to their look, this tee is crafted from soft, breathable fabric ensuring all-day comfort. Ideal for casual outings or as a unique gift, this t-shirt is a versatile addition to any collection.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/QkIa5tT.jpeg",
+                  "https://i.imgur.com/jb5Yu0h.jpeg",
+                  "https://i.imgur.com/UlxxXyG.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 2,
+            "title": "Classic Red Pullover Hoodie",
+            "slug": "classic-red-pullover-hoodie",
+            "price": 10,
+            "description": "Elevate your casual wardrobe with our Classic Red Pullover Hoodie. Crafted with a soft cotton blend for ultimate comfort, this vibrant red hoodie features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs for a snug fit. The timeless design ensures easy pairing with jeans or joggers for a relaxed yet stylish look, making it a versatile addition to your everyday attire.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/1twoaDy.jpeg",
+                  "https://i.imgur.com/FDwQgLy.jpeg",
+                  "https://i.imgur.com/kg1ZhhH.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 3,
+            "title": "Classic Heather Gray Hoodie",
+            "slug": "classic-heather-gray-hoodie",
+            "price": 69,
+            "description": "Stay cozy and stylish with our Classic Heather Gray Hoodie. Crafted from soft, durable fabric, it features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs. Perfect for a casual day out or a relaxing evening in, this hoodie is a versatile addition to any wardrobe.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/cHddUCu.jpeg",
+                  "https://i.imgur.com/CFOjAgK.jpeg",
+                  "https://i.imgur.com/wbIMMme.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 4,
+            "title": "Classic Grey Hooded Sweatshirt",
+            "slug": "classic-grey-hooded-sweatshirt",
+            "price": 90,
+            "description": "Elevate your casual wear with our Classic Grey Hooded Sweatshirt. Made from a soft cotton blend, this hoodie features a front kangaroo pocket, an adjustable drawstring hood, and ribbed cuffs for a snug fit. Perfect for those chilly evenings or lazy weekends, it pairs effortlessly with your favorite jeans or joggers.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/R2PN9Wq.jpeg",
+                  "https://i.imgur.com/IvxMPFr.jpeg",
+                  "https://i.imgur.com/7eW9nXP.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 5,
+            "title": "Classic Black Hooded Sweatshirt",
+            "slug": "classic-black-hooded-sweatshirt",
+            "price": 79,
+            "description": "Elevate your casual wardrobe with our Classic Black Hooded Sweatshirt. Made from high-quality, soft fabric that ensures comfort and durability, this hoodie features a spacious kangaroo pocket and an adjustable drawstring hood. Its versatile design makes it perfect for a relaxed day at home or a casual outing.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/cSytoSD.jpeg",
+                  "https://i.imgur.com/WwKucXb.jpeg",
+                  "https://i.imgur.com/cE2Dxh9.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 6,
+            "title": "Classic Comfort Fit Joggers",
+            "slug": "classic-comfort-fit-joggers",
+            "price": 25,
+            "description": "Discover the perfect blend of style and comfort with our Classic Comfort Fit Joggers. These versatile black joggers feature a soft elastic waistband with an adjustable drawstring, two side pockets, and ribbed ankle cuffs for a secure fit. Made from a lightweight and durable fabric, they are ideal for both active days and relaxed lounging.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/ZKGofuB.jpeg",
+                  "https://i.imgur.com/GJi73H0.jpeg",
+                  "https://i.imgur.com/633Fqrz.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 7,
+            "title": "Classic Comfort Drawstring Joggers",
+            "slug": "classic-comfort-drawstring-joggers",
+            "price": 79,
+            "description": "Experience the perfect blend of comfort and style with our Classic Comfort Drawstring Joggers. Designed for a relaxed fit, these joggers feature a soft, stretchable fabric, convenient side pockets, and an adjustable drawstring waist with elegant gold-tipped detailing. Ideal for lounging or running errands, these pants will quickly become your go-to for effortless, casual wear.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/mp3rUty.jpeg",
+                  "https://i.imgur.com/JQRGIc2.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 8,
+            "title": "Classic Red Jogger Sweatpants",
+            "slug": "classic-red-jogger-sweatpants",
+            "price": 98,
+            "description": "Experience ultimate comfort with our red jogger sweatpants, perfect for both workout sessions and lounging around the house. Made with soft, durable fabric, these joggers feature a snug waistband, adjustable drawstring, and practical side pockets for functionality. Their tapered design and elastic cuffs offer a modern fit that keeps you looking stylish on the go.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/9LFjwpI.jpeg",
+                  "https://i.imgur.com/vzrTgUR.jpeg",
+                  "https://i.imgur.com/p5NdI6n.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 9,
+            "title": "Classic Navy Blue Baseball Cap",
+            "slug": "classic-navy-blue-baseball-cap",
+            "price": 61,
+            "description": "Step out in style with this sleek navy blue baseball cap. Crafted from durable material, it features a smooth, structured design and an adjustable strap for the perfect fit. Protect your eyes from the sun and complement your casual looks with this versatile and timeless accessory.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/R3iobJA.jpeg",
+                  "https://i.imgur.com/Wv2KTsf.jpeg",
+                  "https://i.imgur.com/76HAxcA.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 10,
+            "title": "Classic Blue Baseball Cap",
+            "slug": "classic-blue-baseball-cap",
+            "price": 86,
+            "description": "Top off your casual look with our Classic Blue Baseball Cap, made from high-quality materials for lasting comfort. Featuring a timeless six-panel design with a pre-curved visor, this adjustable cap offers both style and practicality for everyday wear.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/wXuQ7bm.jpeg",
+                  "https://i.imgur.com/BZrIEmb.jpeg",
+                  "https://i.imgur.com/KcT6BE0.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 11,
+            "title": "Classic Red Baseball Cap",
+            "slug": "classic-red-baseball-cap",
+            "price": 35,
+            "description": "Elevate your casual wardrobe with this timeless red baseball cap. Crafted from durable fabric, it features a comfortable fit with an adjustable strap at the back, ensuring one size fits all. Perfect for sunny days or adding a sporty touch to your outfit.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/cBuLvBi.jpeg",
+                  "https://i.imgur.com/N1GkCIR.jpeg",
+                  "https://i.imgur.com/kKc9A5p.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 12,
+            "title": "Classic Black Baseball Cap",
+            "slug": "classic-black-baseball-cap",
+            "price": 58,
+            "description": "Elevate your casual wear with this timeless black baseball cap. Made with high-quality, breathable fabric, it features an adjustable strap for the perfect fit. Whether you’re out for a jog or just running errands, this cap adds a touch of style to any outfit.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/KeqG6r4.jpeg",
+                  "https://i.imgur.com/xGQOw3p.jpeg",
+                  "https://i.imgur.com/oO5OUjb.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 13,
+            "title": "Classic Olive Chino Shorts",
+            "slug": "classic-olive-chino-shorts",
+            "price": 84,
+            "description": "Elevate your casual wardrobe with these classic olive chino shorts. Designed for comfort and versatility, they feature a smooth waistband, practical pockets, and a tailored fit that makes them perfect for both relaxed weekends and smart-casual occasions. The durable fabric ensures they hold up throughout your daily activities while maintaining a stylish look.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/UsFIvYs.jpeg",
+                  "https://i.imgur.com/YIq57b6.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 14,
+            "title": "Classic High-Waisted Athletic Shorts",
+            "slug": "classic-high-waisted-athletic-shorts",
+            "price": 43,
+            "description": "Stay comfortable and stylish with our Classic High-Waisted Athletic Shorts. Designed for optimal movement and versatility, these shorts are a must-have for your workout wardrobe. Featuring a figure-flattering high waist, breathable fabric, and a secure fit that ensures they stay in place during any activity, these shorts are perfect for the gym, running, or even just casual wear.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/eGOUveI.jpeg",
+                  "https://i.imgur.com/UcsGO7E.jpeg",
+                  "https://i.imgur.com/NLn4e7S.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 15,
+            "title": "Classic White Crew Neck T-Shirt",
+            "slug": "classic-white-crew-neck-t-shirt",
+            "price": 39,
+            "description": "Elevate your basics with this versatile white crew neck tee. Made from a soft, breathable cotton blend, it offers both comfort and durability. Its sleek, timeless design ensures it pairs well with virtually any outfit. Ideal for layering or wearing on its own, this t-shirt is a must-have staple for every wardrobe.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/axsyGpD.jpeg",
+                  "https://i.imgur.com/T8oq9X2.jpeg",
+                  "https://i.imgur.com/J6MinJn.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 16,
+            "title": "Classic White Tee - Timeless Style and Comfort",
+            "slug": "classic-white-tee-timeless-style-and-comfort",
+            "price": 73,
+            "description": "Elevate your everyday wardrobe with our Classic White Tee. Crafted from premium soft cotton material, this versatile t-shirt combines comfort with durability, perfect for daily wear. Featuring a relaxed, unisex fit that flatters every body type, it's a staple piece for any casual ensemble. Easy to care for and machine washable, this white tee retains its shape and softness wash after wash. Pair it with your favorite jeans or layer it under a jacket for a smart look.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/Y54Bt8J.jpeg",
+                  "https://i.imgur.com/SZPDSgy.jpeg",
+                  "https://i.imgur.com/sJv4Xx0.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 17,
+            "title": "Classic Black T-Shirt",
+            "slug": "classic-black-t-shirt",
+            "price": 35,
+            "description": "Elevate your everyday style with our Classic Black T-Shirt. This staple piece is crafted from soft, breathable cotton for all-day comfort. Its versatile design features a classic crew neck and short sleeves, making it perfect for layering or wearing on its own. Durable and easy to care for, it's sure to become a favorite in your wardrobe.",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/9DqEOV5.jpeg",
+                  "https://i.imgur.com/ae0AEYn.jpeg",
+                  "https://i.imgur.com/mZ4rUjj.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 35,
+            "title": "Futuristic Holographic Soccer Cleats",
+            "slug": "futuristic-holographic-soccer-cleats",
+            "price": 39,
+            "description": "Step onto the field and stand out from the crowd with these eye-catching holographic soccer cleats. Designed for the modern player, these cleats feature a sleek silhouette, lightweight construction for maximum agility, and durable studs for optimal traction. The shimmering holographic finish reflects a rainbow of colors as you move, ensuring that you'll be noticed for both your skills and style. Perfect for the fashion-forward athlete who wants to make a statement.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/qNOjJje.jpeg",
+                  "https://i.imgur.com/NjfCFnu.jpeg",
+                  "https://i.imgur.com/eYtvXS1.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 36,
+            "title": "Rainbow Glitter High Heels",
+            "slug": "rainbow-glitter-high-heels",
+            "price": 39,
+            "description": "Step into the spotlight with these eye-catching rainbow glitter high heels. Designed to dazzle, each shoe boasts a kaleidoscope of shimmering colors that catch and reflect light with every step. Perfect for special occasions or a night out, these stunners are sure to turn heads and elevate any ensemble.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/62gGzeF.jpeg",
+                  "https://i.imgur.com/5MoPuFM.jpeg",
+                  "https://i.imgur.com/sUVj7pK.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 37,
+            "title": "Chic Summer Denim Espadrille Sandals",
+            "slug": "chic-summer-denim-espadrille-sandals",
+            "price": 33,
+            "description": "Step into summer with style in our denim espadrille sandals. Featuring a braided jute sole for a classic touch and adjustable denim straps for a snug fit, these sandals offer both comfort and a fashionable edge. The easy slip-on design ensures convenience for beach days or casual outings.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/9qrmE1b.jpeg",
+                  "https://i.imgur.com/wqKxBVH.jpeg",
+                  "https://i.imgur.com/sWSV6DK.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 38,
+            "title": "Vibrant Runners: Bold Orange & Blue Sneakers",
+            "slug": "vibrant-runners-bold-orange-blue-sneakers",
+            "price": 27,
+            "description": "Step into style with these eye-catching sneakers featuring a striking combination of orange and blue hues. Designed for both comfort and fashion, these shoes come with flexible soles and cushioned insoles, perfect for active individuals who don't compromise on style. The reflective silver accents add a touch of modernity, making them a standout accessory for your workout or casual wear.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/hKcMNJs.jpeg",
+                  "https://i.imgur.com/NYToymX.jpeg",
+                  "https://i.imgur.com/HiiapCt.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 39,
+            "title": "Vibrant Pink Classic Sneakers",
+            "slug": "vibrant-pink-classic-sneakers",
+            "price": 84,
+            "description": "Step into style with our Vibrant Pink Classic Sneakers! These eye-catching shoes feature a bold pink hue with iconic white detailing, offering a sleek, timeless design. Constructed with durable materials and a comfortable fit, they are perfect for those seeking a pop of color in their everyday footwear. Grab a pair today and add some vibrancy to your step!",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/mcW42Gi.jpeg",
+                  "https://i.imgur.com/mhn7qsF.jpeg",
+                  "https://i.imgur.com/F8vhnFJ.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 40,
+            "title": "Futuristic Silver and Gold High-Top Sneaker",
+            "slug": "futuristic-silver-and-gold-high-top-sneaker",
+            "price": 68,
+            "description": "Step into the future with this eye-catching high-top sneaker, designed for those who dare to stand out. The sneaker features a sleek silver body with striking gold accents, offering a modern twist on classic footwear. Its high-top design provides support and style, making it the perfect addition to any avant-garde fashion collection. Grab a pair today and elevate your shoe game!",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/npLfCGq.jpeg",
+                  "https://i.imgur.com/vYim3gj.jpeg",
+                  "https://i.imgur.com/HxuHwBO.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 41,
+            "title": "Futuristic Chic High-Heel Boots",
+            "slug": "futuristic-chic-high-heel-boots",
+            "price": 36,
+            "description": "Elevate your style with our cutting-edge high-heel boots that blend bold design with avant-garde aesthetics. These boots feature a unique color-block heel, a sleek silhouette, and a versatile light grey finish that pairs easily with any cutting-edge outfit. Crafted for the fashion-forward individual, these boots are sure to make a statement.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/HqYqLnW.jpeg",
+                  "https://i.imgur.com/RlDGnZw.jpeg",
+                  "https://i.imgur.com/qa0O6fg.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 42,
+            "title": "Elegant Patent Leather Peep-Toe Pumps with Gold-Tone Heel",
+            "slug": "elegant-patent-leather-peep-toe-pumps",
+            "price": 53,
+            "description": "Step into sophistication with these chic peep-toe pumps, showcasing a lustrous patent leather finish and an eye-catching gold-tone block heel. The ornate buckle detail adds a touch of glamour, perfect for elevating your evening attire or complementing a polished daytime look.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/AzAY4Ed.jpeg",
+                  "https://i.imgur.com/umfnS9P.jpeg",
+                  "https://i.imgur.com/uFyuvLg.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 43,
+            "title": "Elegant Purple Leather Loafers",
+            "slug": "elegant-purple-leather-loafers",
+            "price": 17,
+            "description": "Step into sophistication with our Elegant Purple Leather Loafers, perfect for making a bold statement. Crafted from high-quality leather with a vibrant purple finish, these shoes feature a classic loafer silhouette that's been updated with a contemporary twist. The comfortable slip-on design and durable soles ensure both style and functionality for the modern man.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/Au8J9sX.jpeg",
+                  "https://i.imgur.com/gdr8BW2.jpeg",
+                  "https://i.imgur.com/KDCZxnJ.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 44,
+            "title": "Classic Blue Suede Casual Shoes",
+            "slug": "classic-blue-suede-casual-shoes",
+            "price": 39,
+            "description": "Step into comfort with our Classic Blue Suede Casual Shoes, perfect for everyday wear. These shoes feature a stylish blue suede upper, durable rubber soles for superior traction, and classic lace-up fronts for a snug fit. The sleek design pairs well with both jeans and chinos, making them a versatile addition to any wardrobe.",
+            "category": {
+                  "id": 4,
+                  "name": "Shoes",
+                  "slug": "shoes",
+                  "image": "https://i.imgur.com/qNOjJje.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/sC0ztOB.jpeg",
+                  "https://i.imgur.com/Jf9DL9R.jpeg",
+                  "https://i.imgur.com/R1IN95T.jpeg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 51,
+            "title": "Elegant Glass Tumbler Set",
+            "slug": "elegant-glass-tumbler-set",
+            "price": 50,
+            "description": "Enhance your drinkware collection with our sophisticated set of glass tumblers, perfect for serving your favorite beverages. This versatile set includes both clear and subtly tinted glasses, lending a modern touch to any table setting. Crafted with quality materials, these durable tumblers are designed to withstand daily use while maintaining their elegant appeal.",
+            "category": {
+                  "id": 5,
+                  "name": "Miscellaneous",
+                  "slug": "miscellaneous",
+                  "image": "https://i.imgur.com/BG8J0Fj.jpg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://i.imgur.com/TF0pXdL.jpg",
+                  "https://i.imgur.com/BLDByXP.jpg",
+                  "https://i.imgur.com/b7trwCv.jpg"
+            ],
+            "creationAt": "2025-07-28T18:34:31.000Z",
+            "updatedAt": "2025-07-28T18:34:31.000Z"
+      },
+      {
+            "id": 52,
+            "title": "New Product evolve",
+            "slug": "new-product-evolve",
+            "price": 10,
+            "description": "A description",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://placehold.co/600x400"
+            ],
+            "creationAt": "2025-07-28T19:07:09.000Z",
+            "updatedAt": "2025-07-28T19:07:09.000Z"
+      },
+      {
+            "id": 53,
+            "title": "New Product Course",
+            "slug": "new-product-course",
+            "price": 100,
+            "description": "A description",
+            "category": {
+                  "id": 1,
+                  "name": "Clothes",
+                  "slug": "clothes",
+                  "image": "https://i.imgur.com/QkIa5tT.jpeg",
+                  "creationAt": "2025-07-28T18:34:31.000Z",
+                  "updatedAt": "2025-07-28T18:34:31.000Z"
+            },
+            "images": [
+                  "https://placehold.co/600x400"
+            ],
+            "creationAt": "2025-07-28T20:24:58.000Z",
+            "updatedAt": "2025-07-28T20:24:58.000Z"
+      }
+
+]
